@@ -22,6 +22,18 @@ body {
     flex-direction: column;
 }
 
+/* ... (Your existing CSS) ... */
+
+.home,
+.projects,
+.skills,
+.section-timeline,
+.experience,
+.contact {
+    min-height: 100vh; /* Make each section fill the viewport */
+    padding: 8rem 0; /* Keep your existing padding */
+}
+
 /* Header */
 header {
     position: fixed;
@@ -38,7 +50,7 @@ header {
 
 .logo {
     font-size: 2rem;
-    color: #4b8bb7;
+    color: #4766cb;
     font-weight: 800;
     cursor: pointer;
     transition: 0.5s ease;
@@ -70,7 +82,7 @@ nav a.active {
     align-items: center;
     gap: 8rem;
     padding: 8rem 9% 5rem;
-    background-color: #0a0a0a;
+    background-color: #010000;
 }
 
 .home .home-content h1 {
@@ -80,12 +92,12 @@ nav a.active {
 }
 
 span {
-    color: #4b8bb7;
+    color: #8f8f8f;
 }
 
 .home-content h3 {
     font-size: 3.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.1rem;
     font-weight: 700;
 }
 
@@ -117,40 +129,40 @@ span {
     width: 4rem;
     height: 4rem;
     background-color: transparent;
-    border: 0.2rem solid #4b8bb7;
+    border: 0.2rem solid #ffffff;
     font-size: 2rem;
     border-radius: 50%;
     margin: 3rem 1.5rem 3rem 0;
     transition: 0.3s ease;
-    color: #4b8bb7;
+    color: #ffffff;
 }
 
 .social-icons a:hover {
     color: black;
     transform: scale(1.3) translateY(-5px);
-    background-color: #4b8bb7;
-    box-shadow: 0 0 25px #4b8bb7;
+    background-color: #ffffff;
+    box-shadow: 0 0 25px #ffffff;
 }
 
 .btn {
     display: inline-block;
     padding: 1rem 2.8rem;
-    background-color: black;
+    background-color: #000000;
     border-radius: 4rem;
     font-size: 1.6rem;
-    color: #4b8bb7;
-    letter-spacing: 0.3rem;
+    color: #ffffff;
+    letter-spacing: 0.rem;
     font-weight: 600;
-    border: 2px solid #4b8bb7;
+    border: 2px solid #ffffff;
     transition: 0.3s ease;
     cursor: pointer;
 }
 
 .btn:hover {
     transform: scale(1.03);
-    background-color: #4b8bb7;
+    background-color: #f4f4f4;
     color: black;
-    box-shadow: 0 0 25px #4b8bb7;
+    box-shadow: 0 0 25px #e5e5e5;
 }
 
 
@@ -169,7 +181,7 @@ span {
 
 .typing-text span::before {
     content: "Machine Learning Engineer";
-    color: #4b8bb7;
+    color: #4766cb;
     animation: words 15s infinite;
 }
 
@@ -224,7 +236,7 @@ span {
 /* Projects Section */
 .projects {
     padding: 8rem 0;
-    background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+    background: linear-gradient(135deg, #320160, #0f0056);
 }
 
 .projects-container {
@@ -239,9 +251,9 @@ span {
 .project-card {
     background: #1a1a1a;
     border-radius: 15px;
-    padding: 2.5rem;
+    padding: 3.5rem;
     text-align: center;
-    min-height: 350px;
+    min-height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -253,11 +265,11 @@ span {
 .project-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 30px rgba(75, 139, 183, 0.2);
-    border-color: #4b8bb7;
+    border-color: #7038c9;
 }
 
 .project-icon {
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 1.5rem;
     padding: 1.5rem;
     border-radius: 15px;
@@ -266,13 +278,13 @@ span {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: #725555;
     background: rgba(75, 139, 183, 0.1);
 }
 
 .project-icon.heart {
     color: #ff6b6b;
-    background: rgba(255, 107, 107, 0.1);
+    background: rgb(183 66 66 / 10%);
 }
 
 .project-icon.insurance {
@@ -288,8 +300,8 @@ span {
 
 .project-card h3 {
     font-size: 2rem;
-    color: #4b8bb7;
-    margin-bottom: 1rem;
+    color: #8651d9;
+    margin-bottom: 2rem;
 }
 
 .project-card p {
@@ -300,7 +312,7 @@ span {
 
 .project-link {
     font-size: 1.2rem;
-    color: #4b8bb7;
+    color: #8651d9;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
@@ -314,20 +326,20 @@ span {
 /* Skills Section */
 .skills {
     padding: 8rem 0;
-    background: linear-gradient(135deg, #1a1a1a, #0a0a0a);
+    background: linear-gradient(135deg, #320160, #0f0056);
 }
 
 .skills-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 3rem;
 }
 
 .skill-card {
-    background: #1a1a1a;
+    background: #050413;
     border-radius: 15px;
     padding: 2.5rem;
     text-align: center;
@@ -342,7 +354,7 @@ span {
 }
 
 .skill-icon {
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin-bottom: 1.5rem;
     padding: 1.5rem;
     border-radius: 15px;
@@ -354,35 +366,35 @@ span {
 }
 
 .skill-icon.python {
-    color: #3776AB;
-    background: rgba(55, 118, 171, 0.2);
+    color: #0f60a4;
+    background: rgb(0 0 0 / 20%);
 }
 
 .skill-icon.powerbi {
     color: #F2C811;
-    background: rgba(242, 200, 17, 0.2);
+    background: rgb(0 0 0 / 20%);
 }
 
 .skill-icon.sql {
     color: #00758F;
-    background: rgba(0, 117, 143, 0.2);
+    background: rgb(0 0 0 / 20%);
 }
 
 .skill-icon.ml {
     color: #A61C3C;
-    background: rgba(166, 28, 60, 0.2);
+    background: rgb(0 0 0 / 20%);
 }
 
 .skill-card h3 {
-    font-size: 1.8rem;
-    color: #4b8bb7;
+    font-size: 1.5rem;
+    color: #7a7a7a;
 }
 
 /* Education Section */
 .section-timeline {
     padding: 8rem 0;
-    background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
-    color: white;
+    background: linear-gradient(135deg, #320160, #0f0056);
+    color: #ffffff;
 }
 
 .timeline_component {
@@ -398,21 +410,21 @@ span {
     bottom: 0;
     left: 20px;
     width: 2px;
-    background: #4b8bb7;
+    background: #000000;
 }
 
 .timeline_progress-bar {
     position: absolute;
     top: 0;
     width: 100%;
-    background: linear-gradient(to bottom, #4b8bb7, #69db7c);
-    height: 0%;
+    background: linear-gradient(to bottom, #4564cd, #7628bd);
+    height: 1%;
     transition: height 0.5s ease;
 }
 
 .timeline_item {
     display: flex;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
     position: relative;
     opacity: 0;
     transform: translateY(20px);
@@ -436,32 +448,26 @@ span {
 }
 
 .timeline_centre {
-    width: 40px;
+    width: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.timeline_circle {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: #4b8bb7;
-}
 
 .timeline_right {
-    flex: 1;
-    padding-left: 20px;
+    flex: 2;
+    padding-left: 2px;
 }
 
 .margin-bottom-medium h3 {
     font-size: 1.8rem;
-    color: #4b8bb7;
+    color: #ffffff;
     margin-bottom: 5px;
 }
 
 .margin-bottom-medium h4 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: #aaa;
     margin-bottom: 10px;
 }
@@ -472,9 +478,9 @@ span {
 }
 
 .timeline_image-wrapper img {
-    max-width: 150px;
-    border-radius: 8px;
-    margin-top: 10px;
+    max-width: 100px;
+    border-radius: 5px;
+    margin-top: 15px;
 }
 
 .timeline_quote-wrapper {
@@ -499,18 +505,20 @@ span {
     color: #bbb;
 }
 
+
+/*
 /* Experience Section */
 .experience {
     padding: 8rem 0;
-    background: linear-gradient(135deg, #1a1a1a, #0a0a0a);
+    background: linear-gradient(135deg, #320160, #0f0056);
     color: white;
 }
 
 /* Contact Section */
 .contact {
     padding: 8rem 0;
-    background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
-    color: white;
+    background: linear-gradient(135deg, #320160, #0f0056);
+    color: #ffffff;
 }
 
 .contact-container {
@@ -518,7 +526,7 @@ span {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
+    padding: 5rem;
 }
 
 .contact-content {
@@ -540,18 +548,18 @@ span {
 
 .contact-form input,
 .contact-form textarea {
-    background: #1a1a1a;
+    background: #ffffff;
     border: 1px solid #4b8bb7;
     padding: 1rem;
     margin-bottom: 1rem;
     color: white;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     border-radius: 5px;
 }
 
 .contact-form textarea {
     resize: vertical;
-    min-height: 150px;
+    min-height: 145px;
 }
 
 .contact-info {
@@ -560,41 +568,33 @@ span {
 }
 
 .contact-info h3 {
-    font-size: 2.4rem;
-    color: #4b8bb7;
-    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    color: #d8d8d8;
+    margin-bottom: 2.5rem;
 }
 
 .contact-info p {
     display: flex;
     align-items: center;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
 .contact-info i {
     margin-right: 1rem;
-    color: #4b8bb7;
+    color: #caced5;
 }
 
 footer {
-    background: #1a1a1a;
-    color: white;
-    text-align: center;
-    padding: 2rem 0;
-    margin-top: auto; /* Push footer to the bottom */
-}
-
-footer {
-    background-color: #000;
+    background-color: #000000;
     color: #fff;
     text-align: center;
-    padding: 2rem 0;
+    padding: 2.5rem 0;
     margin-top: auto;
 }
 
 .footer-container {
-    max-width: 840px;
+    max-width: 850px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -602,7 +602,7 @@ footer {
 footer .logo {
     font-size: 2rem;
     font-weight: 700;
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     margin-bottom: 1rem;
     display: block;
@@ -613,7 +613,7 @@ footer .social-media-list {
     padding: 0;
     margin: 1rem 0;
     display: flex;
-    justify-content: center;
+    justify-content: right;
 }
 
 footer .social-media-list li {
@@ -624,7 +624,7 @@ footer .social-media-list li {
 footer .social-icons {
     display: flex; /* Use flexbox for alignment */
     justify-content: center; /* Center the icons horizontally */
-    margin: 2rem 0; /* Add some spacing */
+    margin: 5rem 0; /* Add some spacing */
 }
 
 footer .social-icons a {
@@ -696,7 +696,7 @@ footer p {
     bottom: 0;
     left: 20px;
     width: 4px;
-    background: linear-gradient(to bottom, #4b8bb7, #69db7c);
+    background: linear-gradient(to bottom, #42779b, #69db7c);
 }
 
 .timeline_text {
@@ -713,5 +713,5 @@ footer p {
 }
 
 .timeline_quote {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
